@@ -10,6 +10,11 @@
 
 Authorization and role management for Ruby, with no runtime dependencies.
 
+> [!IMPORTANT]
+> **Stable and feature-complete.** `u-authorization` has no new features planned. Its public API is frozen and backward compatible, and ongoing work is limited to keeping it running on current and future Ruby versions. You can depend on it without expecting breaking changes.
+>
+> A major version bump signals only that an old Ruby version was dropped from the supported matrix, which is a dependency-floor change under SemVer. Your code keeps working.
+
 `u-authorization` splits authorization into two layers that you can use together or on their own:
 
 1. **Permissions** answer "is this role allowed to use this feature, in this context?". A role is plain data (a Hash, or JSON loaded from a database), so you can change who can do what without redeploying.
