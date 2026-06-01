@@ -1,10 +1,15 @@
 source 'https://rubygems.org'
 
-group :test do
-  gem 'minitest', '~> 5.11', '>= 5.11.3'
-  gem 'minitest-reporters', '~> 1.3', '>= 1.3.6'
-  gem 'simplecov', require: false
-end
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 # Specify your gem's dependencies in u-authorization.gemspec
 gemspec
+
+gem 'rake', '~> 13.0'
+
+group :test do
+  gem 'minitest', '~> 5.11', '>= 5.11.3'
+  gem 'minitest-reporters', '~> 1.3', '>= 1.3.6'
+  gem 'ostruct', '~> 0.6.3' if RUBY_VERSION >= '3.5'
+  gem 'simplecov', '~> 0.22.0', require: false
+end
