@@ -7,12 +7,12 @@
   <a href="https://rubygems.org/gems/u-authorization">
     <img alt="Gem" src="https://img.shields.io/gem/v/u-authorization.svg?style=flat-square">
   </a>
-  <a href="https://github.com/serradura/u-authorization/actions/workflows/ci.yml">
-    <img alt="Build Status" src="https://github.com/serradura/u-authorization/actions/workflows/ci.yml/badge.svg">
+  <a href="https://github.com/u-gems/u-authorization/actions/workflows/ci.yml">
+    <img alt="Build Status" src="https://github.com/u-gems/u-authorization/actions/workflows/ci.yml/badge.svg">
   </a>
   <br/>
-  <a href="https://qlty.sh/gh/serradura/projects/u-authorization"><img src="https://qlty.sh/gh/serradura/projects/u-authorization/maintainability.svg" alt="Maintainability" /></a>
-  <a href="https://qlty.sh/gh/serradura/projects/u-authorization"><img src="https://qlty.sh/gh/serradura/projects/u-authorization/coverage.svg" alt="Code Coverage" /></a>
+  <a href="https://qlty.sh/gh/u-gems/projects/u-authorization"><img src="https://qlty.sh/gh/u-gems/projects/u-authorization/maintainability.svg" alt="Maintainability" /></a>
+  <a href="https://qlty.sh/gh/u-gems/projects/u-authorization"><img src="https://qlty.sh/gh/u-gems/projects/u-authorization/coverage.svg" alt="Code Coverage" /></a>
   <br/>
   <img src="https://img.shields.io/badge/Ruby%20%3E%3D%202.7%2C%20%3C%3D%20Head-ruby.svg?colorA=444&colorB=333" alt="Ruby">
   <img src="https://img.shields.io/badge/Rails%20%3E%3D%206.0%2C%20%3C%3D%20Edge-rails.svg?colorA=444&colorB=333" alt="Rails">
@@ -505,7 +505,7 @@ To run the suite across Ruby versions locally, use [mise](https://mise.jdx.dev).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/serradura/u-authorization. Please add or update tests for any behavior you change; the test suite is the contract for the public API.
+Bug reports and pull requests are welcome on GitHub at https://github.com/u-gems/u-authorization. Please add or update tests for any behavior you change; the test suite is the contract for the public API.
 
 1. Fork the repository.
 2. Create your feature branch (`git checkout -b my-new-feature`).

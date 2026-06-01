@@ -10,12 +10,12 @@ Gem::Specification.new do |spec|
 
   spec.summary      = 'Authorization library and role managment'
   spec.description  = 'Simple authorization library and role managment for Ruby.'
-  spec.homepage     = 'https://github.com/serradura/u-authorization'
+  spec.homepage     = 'https://github.com/u-gems/u-authorization'
   spec.license      = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.7.0')
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/serradura/u-authorization'
+  spec.metadata['source_code_uri'] = 'https://github.com/u-gems/u-authorization'
   spec.metadata['changelog_uri'] = "#{spec.homepage}/blob/main/CHANGELOG.md"
   spec.metadata['bug_tracker_uri'] = "#{spec.homepage}/issues"
 
