@@ -99,21 +99,24 @@ supported versions. CI (`.github/workflows/ci.yml`) runs the suite across the
 full `ruby` matrix (2.7 → head). Tests are the success criterion for any
 behavior change — write or update a test first, then make it pass (rule 4).
 
-## README is part of every change
+## CHANGELOG and README are part of every change
 
-`README.md` is user-facing — keep it in sync with the code. The badges and the
-**Required Ruby version** section near the top reference the supported Ruby
-bounds; update them when those bounds move. If you change a documented API,
-update the relevant **Usage** section in the same commit. (This repo has no
-`CHANGELOG.md`.)
+Both files are user-facing; keep them in sync with the code.
+
+- `CHANGELOG.md` follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/). Record every user-visible change (behavior change, bug fix, dependency-floor bump, security fix) under the appropriate section of `[Unreleased]`. Pure internal-refactor or CI-only changes generally don't need an entry.
+- `README.md` badges and the **Required Ruby version** section near the top reference the supported Ruby bounds; update them when those bounds move. If you change a documented API, update the relevant **Usage** section in the same commit.
 
 ## Bumping the version
 
 1. Edit `lib/micro/authorization/version.rb` — change
    `Micro::Authorization::VERSION`. Follow [SemVer](https://semver.org/):
    patch for fixes, minor for additive user-visible changes, major for
-   breaking changes.
-2. If the supported Ruby matrix moved, update the Ruby badge and the
+   breaking changes. For this gem a major bump means an old Ruby was dropped
+   from the supported matrix, not a behavior break.
+2. Add a new top entry in `CHANGELOG.md` (`## [X.Y.Z] - YYYY-MM-DD`), move the
+   relevant `[Unreleased]` notes under it, and add a matching compare link at
+   the bottom (`[X.Y.Z]: …/compare/vPREV...vX.Y.Z`).
+3. If the supported Ruby matrix moved, update the Ruby badge and the
    **Required Ruby version** section in `README.md`, and double-check the
    `required_ruby_version` in `u-authorization.gemspec` and the CI matrix in
    `.github/workflows/ci.yml` agree.
