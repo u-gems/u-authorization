@@ -53,7 +53,7 @@ module Micro
           raise ArgumentError, "policies must be a Hash. e.g: `{policy_name: #{Policy.name}}`"
         end
 
-        new_policies.each(&method(:add_policy))
+        new_policies.each { |key, policy_klass| add_policy(key, policy_klass) }
 
         self
       end

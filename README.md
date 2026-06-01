@@ -1,8 +1,10 @@
-![Ruby](https://img.shields.io/badge/ruby-2.2+-ruby.svg?colorA=99004d&colorB=cc0066)
 [![Gem](https://img.shields.io/gem/v/u-authorization.svg?style=flat-square)](https://rubygems.org/gems/u-authorization)
-[![Build Status](https://travis-ci.com/serradura/u-authorization.svg?branch=master)](https://travis-ci.com/serradura/u-authorization)
-[![Maintainability](https://api.codeclimate.com/v1/badges/19251112cf39afdf8bf6/maintainability)](https://codeclimate.com/github/serradura/u-authorization/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/19251112cf39afdf8bf6/test_coverage)](https://codeclimate.com/github/serradura/u-authorization/test_coverage)
+[![Build Status](https://github.com/serradura/u-authorization/actions/workflows/ci.yml/badge.svg)](https://github.com/serradura/u-authorization/actions/workflows/ci.yml)
+[![Maintainability](https://qlty.sh/gh/serradura/projects/u-authorization/maintainability.svg)](https://qlty.sh/gh/serradura/projects/u-authorization)
+[![Code Coverage](https://qlty.sh/gh/serradura/projects/u-authorization/coverage.svg)](https://qlty.sh/gh/serradura/projects/u-authorization)
+<br/>
+![Ruby](https://img.shields.io/badge/Ruby%20%3E%3D%202.7%2C%20%3C%3D%20Head-ruby.svg?colorA=444&colorB=333)
+![Rails](https://img.shields.io/badge/Rails%20%3E%3D%206.0-rails.svg?colorA=444&colorB=333)
 
 # µ-authorization
 
@@ -10,7 +12,7 @@ Simple authorization library and role managment for Ruby.
 
 ## Required Ruby version
 
-> \>= 2.2.0
+> \>= 2.7.0
 
 ## Installation
 

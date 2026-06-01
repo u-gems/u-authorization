@@ -240,7 +240,7 @@ class Micro::Authorization::ModelTest < Minitest::Test
       }
     )
 
-    err = assert_raises(ArgumentError) { authorization.map({}) }
+    err = assert_raises(ArgumentError) { authorization.map }
     assert_equal('context or policies keywords args must be defined', err.message)
   end
 end
