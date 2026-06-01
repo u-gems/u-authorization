@@ -2,6 +2,15 @@
 
 Notes for AI assistants working in `u-authorization`.
 
+## Golden rule: feature-complete, keep it running
+
+`u-authorization` is feature-complete. There are no plans to add new features. The only ongoing work is keeping the gem compatible and running on current and future Ruby versions, plus the usual bug fixes, docs, and CI upkeep.
+
+That means two things for any task here:
+
+- **Don't add features or change the public API.** The API is frozen and backward compatible. If a task as stated would require a new feature or a breaking change, stop and surface that, then propose a compatibility-only path.
+- **Major version bumps are for dependency-floor changes only** (dropping an old Ruby from the supported matrix) per SemVer. They do not signal a behavior break. Note that this gem is pure Ruby with no ActiveModel dependency, so the support matrix is Ruby-only.
+
 ## How to work in this repo
 
 ### 1. Think before coding
