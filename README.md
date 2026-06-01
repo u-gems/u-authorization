@@ -15,7 +15,7 @@
   <a href="https://qlty.sh/gh/serradura/projects/u-authorization"><img src="https://qlty.sh/gh/serradura/projects/u-authorization/coverage.svg" alt="Code Coverage" /></a>
   <br/>
   <img src="https://img.shields.io/badge/Ruby%20%3E%3D%202.7%2C%20%3C%3D%20Head-ruby.svg?colorA=444&colorB=333" alt="Ruby">
-  <img src="https://img.shields.io/badge/Rails%20%3E%3D%206.0-rails.svg?colorA=444&colorB=333" alt="Rails">
+  <img src="https://img.shields.io/badge/Rails%20%3E%3D%206.0%2C%20%3C%3D%20Edge-rails.svg?colorA=444&colorB=333" alt="Rails">
 </p>
 
 > [!IMPORTANT]
@@ -32,6 +32,7 @@ The two layers are independent, and you pick the right one for each check. Use p
 
 ## Table of contents
 
+- [Table of contents](#table-of-contents)
 - [Installation](#installation)
 - [Supported versions](#supported-versions)
 - [Quick start](#quick-start)
@@ -173,14 +174,14 @@ permissions = Micro::Authorization::Permissions.new(roles['user'], context: [])
 
 Each feature maps to one of these rules:
 
-| Rule | Meaning |
-| --- | --- |
-| `true` | Allowed in every context. |
-| `false` | Denied in every context. |
-| missing key or `nil` | Denied. |
-| `{ 'any' => true }` | Allowed in every context. |
-| `{ 'any' => false }` | Denied in every context. |
-| `{ 'only' => [...] }` | Allowed only in the listed contexts. |
+| Rule                    | Meaning                                        |
+| ----------------------- | ---------------------------------------------- |
+| `true`                  | Allowed in every context.                      |
+| `false`                 | Denied in every context.                       |
+| missing key or `nil`    | Denied.                                        |
+| `{ 'any' => true }`     | Allowed in every context.                      |
+| `{ 'any' => false }`    | Denied in every context.                       |
+| `{ 'only' => [...] }`   | Allowed only in the listed contexts.           |
 | `{ 'except' => [...] }` | Allowed everywhere except the listed contexts. |
 
 `{ 'any' => nil }` and any unrecognized key (for example `{ 'sometimes' => [...] }`) raise `NotImplementedError`, so a malformed role fails loudly instead of silently granting or denying access.
