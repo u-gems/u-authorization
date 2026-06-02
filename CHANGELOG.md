@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 2026-06-01
+
 ### Added
 
 - This `CHANGELOG.md`, following the [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) format and backfilled to cover every tagged release.
@@ -64,7 +66,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - First tagged release of the `Micro::Authorization` architecture: the `Micro::Authorization::Model.build` entry point, the data-driven `Permissions` layer (roles as hashes with `any` / `only` / `except` rules and context matching, including dot-notation segments), and the `Micro::Authorization::Policy` base class for record-level checks that denies undefined predicates by default.
 - Each class organized into its own file under `lib/micro/authorization/`, with the test suite running on Minitest.
 
-[Unreleased]: https://github.com/u-gems/u-authorization/compare/v2.3.0...HEAD
+[Unreleased]: https://github.com/u-gems/u-authorization/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/u-gems/u-authorization/compare/v2.3.0...v3.0.0
 [2.3.0]: https://github.com/u-gems/u-authorization/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/u-gems/u-authorization/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/u-gems/u-authorization/compare/v2.0.0...v2.1.0
